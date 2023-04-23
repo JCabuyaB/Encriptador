@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/img/si.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <a href="index.html" id="logo">Jin</a>
+        <main>
+            <div class="text-area">
+                <textarea
+                    name=""
+                    id="crypt"
+                    cols="30"
+                    rows="10"
+                    placeholder="Ingrese el texto aqui"
+                ></textarea>
+
+                <div class="acciones">
+                    <p>
+                        <img
+                            src="assets/img/danger.png"
+                            alt=""
+                            id="alert"
+                        />Solo letras minúsculas y sin acento
+                    </p>
+                    <div class="botones">
+                        <button class="btn" id="encriptar">Encriptar</button>
+                        <button class="btn" id="desencriptar">
+                            Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <aside class="resultado">
+                <div class="not-aside">
+                    <img src="assets/img/no.png" alt="" class="img" />
+
+                    <div id="mensajes">
+                        <h4>Nungún mensaje fue encontrado</h4>
+                        <p>
+                            Ingresa el texto que desees encriptar o
+                            desencriptar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- solo si se encripto o desencripto algo -->
+                <div id="texto-encriptado">
+                    <textarea name="" id="text-response" readonly></textarea>
+                    <button class="btn" id="copy">Copiar</button>
+                </div>
+
+                
+            </aside>
+        </main>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
